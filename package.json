@@ -1,0 +1,24 @@
+{
+  "name": "teste-backend-credere",
+  "version": "1.0.0",
+  "description": "Credere backend assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinibern5/teste-backend-credere.git"
+  },
+  "author": "Vinicius Bernardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinibern5/teste-backend-credere/issues"
+  },
+  "homepage": "https://github.com/vinibern5/teste-backend-credere#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0"
+  }
+}
