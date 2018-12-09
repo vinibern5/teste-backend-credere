@@ -61,7 +61,7 @@ class Probe {
       if (possibleCommands.hasOwnProperty(command)) {
         possibleCommands[command]();
       } else {
-        throw Error('unrecognized command');
+        throw Error(`unrecognized command: ${command}`);
       }
     });
   }

@@ -258,7 +258,7 @@ describe('Probe', () => {
     it('should throw an error when it executes an inexistent command', () => {
       const errorThunk = () => probe.execute(['x', 'y', 'z']);
 
-      expect(errorThunk).to.throw('unrecognized command');
+      expect(errorThunk).to.throw('unrecognized command: x');
     });
   });
 });
