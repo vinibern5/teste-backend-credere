@@ -76,6 +76,14 @@ describe('Probe', () => {
 
       expect(probe.getOrientation()).to.be.equal(90);
     });
+
+    it('should return to the original orientation after calling reset', () => {
+      rotateProbeLeft(1);
+      expect(probe.getOrientation()).to.be.equal(0);
+      probe.reset();
+
+      expect(probe.getOrientation()).to.be.equal(90);
+    });
   });
 
   describe('Move tests', () => {
@@ -187,6 +195,14 @@ describe('Probe', () => {
 
       expect(() => probe.move()).to.throw('exceeded probe limits, [5, 0]');
       expect(probe.getCoordinates()).to.be.eql([4, 0]);
+    });
+
+    it('should return to the original position and orientation when calling reset', () => {
+      probe.move();
+      probe.rotateLeft();
+      probe.reset();
+      expect(probe.getCoordinates()).to.be.eql([0, 0]);
+      expect(probe.getOrientation()).to.be.equal(90);
     });
   });
 
