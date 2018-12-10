@@ -91,5 +91,5 @@ Caso algum comando seja inexistente, ou deixe a sonda em uma posição invalida,
 }
 ```
 
-# Executando os testes
+# Executando os testes unitários
 Para executar os testes, basta utilizar o comando `npm test` na raiz do repositório.
