@@ -4,7 +4,8 @@
   "description": "Credere backend assignment",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests/*/*.spec.js"
+    "test": "mocha ./tests/*/*.spec.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "10.14.1"
   }
 }
