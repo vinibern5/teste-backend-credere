@@ -38,9 +38,10 @@ router.post('/commands', (req, res) => {
   try {
     if (Array.isArray(commands)) {
       probeInstance.execute(commands);
-      res.status(200);
 
       [response.x, response.y] = probeInstance.getCoordinates();
+
+      res.status(200);
     } else {
       throw new Error('invalid request! Movements should be an array!');
     }

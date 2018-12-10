@@ -101,6 +101,7 @@ class Probe {
    * @memberof Probe
    */
   execute(commands) {
+    // wrap the calls in an arrow function, which will keep our "this".
     const possibleCommands = {
       'ge': () => this.rotateLeft(),
       'gd': () => this.rotateRight(),
